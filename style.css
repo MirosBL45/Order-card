@@ -1,0 +1,174 @@
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+:root {
+	--color1: hsl(225, 100%, 94%);
+	--color2: hsl(245, 75%, 52%);
+	--color3: hsl(225, 100%, 98%);
+	--color4: hsl(224, 23%, 55%);
+	--color5: hsl(223, 47%, 23%);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+p {
+	font-size: 16px;
+}
+
+@media (max-width: 1440px) {
+	body {
+		background: var(--color1) url(images/pattern-background-desktop.svg) no-repeat;
+	}
+
+	.main {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid none;
+		border-radius: 15px;
+		width: max-content;
+		margin: 60px auto;
+		background: white;
+	}
+
+	.dance img {
+		border: 1px solid none;
+		border-radius: 15px 15px 0 0;
+	}
+
+	.order {
+		text-align: center;
+	}
+
+	.order h1 {
+		margin-top: 25px;
+		font-weight: 900;
+	}
+
+	.order p {
+		margin-top: 20px;
+		line-height: 25px;
+	}
+
+	.plan {
+		position: relative;
+		display: flex;
+		background: var(--color3);
+		margin: 20px;
+		border: 1px solid none;
+		border-radius: 15px;
+	}
+
+	.plan img,
+	.plan .year {
+		padding: 20px;
+	}
+
+	.plan .year .annual {
+		font-weight: 700;
+	}
+
+	.plan .year .price {
+		margin-top: 10px;
+	}
+
+	.plan a {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		right: 20px;
+		font-weight: 700;
+		color: var(--color2);
+	}
+
+	.plan a:hover {
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.payment {
+		text-align: center;
+	}
+
+	.payment .pay {
+		margin: 5px 20px;
+		display: block;
+		border: none;
+		text-decoration: none;
+		text-align: center;
+		color: var(--color1);
+		cursor: pointer;
+		padding: 15px 32px;
+		background: var(--color2);
+		border-radius: 10px;
+		box-shadow: 0 12px 16px 0 var(--color4), 0 17px 50px 0 var(--color4);
+		font-weight: 700;
+	}
+
+	.payment .pay:hover {
+		background: rgb(140, 96, 220);
+	}
+
+	.payment .cancel {
+		margin: 35px;
+		display: block;
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.payment .cancel:hover {
+		color: black;
+	}
+
+	.silver {
+		color: grey;
+	}
+}
+
+@media (max-width: 375px) {
+	body {
+		background: var(--color1) url(images/pattern-background-mobile.svg) no-repeat;
+	}
+	.main {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid none;
+		border-radius: 15px;
+		width: 300px;
+		margin: 60px auto;
+		background: white;
+	}
+	.dance img {
+		width: 100%;
+	}
+	.plan img,
+	.plan .year {
+		padding-top: 20px;
+	}
+	.plan img {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.plan .year {
+		padding-left: 5px;
+	}
+	.plan a {
+		right: 10px;
+	}
+}
